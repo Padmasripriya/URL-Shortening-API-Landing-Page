@@ -1,11 +1,11 @@
-# Getting Started with Create React App
+Bootstrap installation: npm install bootstrap
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+import these statements in index.js file
 
-## Available Scripts
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 
-In the project directory, you can run:
-
+Steps to create the application:
 ### `npm start`
 
 Runs the app in the development mode.\
