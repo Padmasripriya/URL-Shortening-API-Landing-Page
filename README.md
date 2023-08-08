@@ -1,4 +1,11 @@
 Bootstrap installation: npm install bootstrap
+
+import these statements in index.js file
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
+
+Steps to create the application:
 ### `npm start`
 
 Runs the app in the development mode.\
