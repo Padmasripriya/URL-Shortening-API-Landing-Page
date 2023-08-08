@@ -1,23 +1,22 @@
+import MenuComponent from './modules/MenuComponent';
+import HeaderComponent from './modules/HeaderComponent';
+import ContentAreaComponent from './modules/ContentAreaComponent';
+import ThreeColumnComponent from './modules/ThreeColumnComponent';
+import CTAComponent from './modules/CTAComponent';
+import FooterComponent from './modules/FooterComponent';
 import logo from './logo.svg';
 import './App.css';
+import './fonts.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MenuComponent />
+      <HeaderComponent />
+      <ContentAreaComponent />
+      <ThreeColumnComponent />
+      <CTAComponent />
+      <FooterComponent />
     </div>
   );
 }
