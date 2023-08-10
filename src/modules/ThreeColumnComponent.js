@@ -2,7 +2,7 @@ import React from "react";
 
 export function ThreeColumnComponent() {
     return(
-        <div className="three-column-component">
+        <div className="three-column-component gray container">
             <div class="row">
                 <div class="col">
                     <img src="" alt="" />

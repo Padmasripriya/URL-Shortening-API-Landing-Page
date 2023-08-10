@@ -5,13 +5,45 @@ html,body {
   height: 100%;
 }
 
-body {
- font-family: "Poppins";
- font-size: 18px;
+* {
+  font-family: "Poppins";
+}
+
+h1, h3 {
+  font-weight: 700 !important; 
+}
+
+h1 {
+  font-size: 40px;
+}
+
+p, li {
+  font-size: 18px;
+  color: hsl(0, 0%, 75%);
+  padding: 10px;
 }
 
 li {
   list-style-type: none;
+}
+
+.gray {
+  background: hsl(0deg 0% 75% / 11%)
+}
+
+.header-component .header-image img {
+  width: 100%;
+  margin-left: 70px;
+}
+
+.header-button a {
+  text-decoration: none;
+  border: 1px solid hsl(180, 66%, 49%);
+  border-radius: 29px;
+  padding: 10px 30px;
+  background: hsl(180, 66%, 49%);
+  color: #ffffff;
+  font-weight: 600;
 }
 
 
