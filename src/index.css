@@ -82,6 +82,34 @@ li {
   margin: 0 10px;
 }
 
+.api-component {
+  background: hsl(257, 27%, 26%);
+  padding: 60px;
+  border-radius: 10px;
+}
+
+.api-component .input-url {
+  padding: 10px 41px;
+  border-radius: 10px;
+  font-size: 18px;
+  border: none;
+}
+
+.api-component .input-url-button {
+  padding: 10px 41px;
+  font-size: 18px;
+  border: 1px solid hsl(180, 66%, 49%);
+  border-radius: 10px;
+  padding: 10px 30px;
+  background: hsl(180, 66%, 49%);
+  color: #ffffff;
+  font-weight: 600;
+  padding: 10px 108px;
+  border-radius: 10px;
+  font-size: 18px;
+  border: none;
+}
+
 
 
 
