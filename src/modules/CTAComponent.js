@@ -2,10 +2,16 @@ import React from "react";
 
 export function CTAComponent() {
     return(
-        <div className="cta-component container">
-            <h3 className="mb-3">Boost your links today</h3>
-            <p className="cta-button"><a href="">Get Started</a></p>
-        </div>
+        <>
+            
+            <div className="cta-component text-center">
+                <div className="container">
+                    <h3 className="mb-4">Boost your links today</h3>
+                    <p><a href="" className="cta-button">Get Started</a></p>
+                </div> 
+            </div>
+        </>
+        
     );
 }
 
