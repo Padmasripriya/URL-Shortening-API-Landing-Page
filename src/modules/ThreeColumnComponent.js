@@ -6,8 +6,8 @@ import FullyCustomizableIcon from "../images/icon-fully-customizable.svg";
 export function ThreeColumnComponent() {
     return(
         <div className="three-column-component gray container">
-            <div class="row">
-                <div class="col">
+            <div className="row">
+                <div className="col">
                     <div className="first-column">
                         <img src={BrandRecognitionIcon} alt="brand recognition icon" />
                         <h4>Brand Recognition</h4>
@@ -18,7 +18,7 @@ export function ThreeColumnComponent() {
                         </p>
                     </div> 
                 </div>
-                <div class="col">
+                <div className="col">
                     <div className="second-column">
                         <img src={DetailedRecordsIcon} alt="detailed records" />
                         <h4>Detailed Records</h4>
@@ -29,7 +29,7 @@ export function ThreeColumnComponent() {
                        </p>
                     </div>
                 </div>
-                <div class="col">
+                <div className="col">
                     <div className="third-column">
                         <img src={FullyCustomizableIcon} alt="fully customizable icon" />
                         <h4>Fully Customizable</h4>
