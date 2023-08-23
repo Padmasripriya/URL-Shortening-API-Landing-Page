@@ -27,11 +27,12 @@ h1, h3 {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 3.5rem !important;
+  line-height: 1.5;
 }
 
 h3 {
-  font-size: 25px;
+  font-size: 1.563rem;
 }
 
 ul {
@@ -39,9 +40,9 @@ ul {
 }
 
 p, li {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: hsl(0, 0%, 75%);
-  padding: 10px;
+  line-height: 2rem;
 }
 
 .cta-button {
@@ -58,12 +59,39 @@ p, li {
   background: hsl(0deg 0% 75% / 11%)
 }
 
+.bg-purple {
+  background: hsl(257, 27%, 26%);
+  margin-top: -55px;
+}
 
 /* Global Styles -- END -- */
 
-.header-component .header-image img {
+.menu-component .sub-menu {
+  position: absolute;
+  top: 50%;
+  background: hsl(257, 27%, 26%);
+  margin-top: 26px;
+  border-radius: 10px;
   width: 100%;
-  margin-left: 70px;
+  text-align: center;
+}
+
+.menu-component .sub-menu .sub-menu-links {
+  color: white;
+  margin-top: 25px;
+  font-weight: 700;
+}
+
+.menu-component .sub-menu .sub-menu-links {
+  color: white;
+  margin-top: 25px;
+  font-weight: 700;
+}
+
+.menu-component .sub-menu .hor-line {
+  background: white;
+  height: 1px;
+  margin: 0 25px;
 }
 
 .header-button a, .cta-button a {
@@ -82,14 +110,40 @@ p, li {
 
 .three-column-component .first-column, .three-column-component .second-column, .three-column-component .third-column {
   background: #ffffff;
-  padding: 10px;
-  width: 350px;
+  padding: 30px;
+  max-width: 350px;
+  min-height: 300px;
+  display: block;
+  margin: 0 auto 80px auto;
+}
+
+.three-column-component .second-column, .three-column-component .third-column {
+  transform: none;
+}
+
+.three-column-component .line {
+  position: absolute;
+  margin-left: 49%;
+  width: 90%;
+  top: 27%;
+  height: 50%;
+  border-left: 6px solid hsl(180, 66%, 49%);
 }
 
 .cta-component {
   background: hsl(257, 27%, 26%);
-  padding: 100px 30px;
-  color: #ffffff;
+  height: 17.188rem; /* 275px to rem */
+}
+
+.cta-component img {
+  height: 17.188rem;
+}
+
+.cta-component .cta-component-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 .footer-component {
@@ -127,6 +181,27 @@ p, li {
   font-size: 18px;
   border: none;
 }
+
+/* Desktop */
+@media only screen and (min-width: 990px) {
+  .three-column-component .second-column {
+    transform: translateY(2rem);
+  }
+  
+  .three-column-component .third-column {
+    transform: translateY(4rem);
+  }
+
+  .three-column-component .line {
+    background: hsl(180, 66%, 49%);
+    height: 6px;
+    position: absolute;
+    margin-left: 60px;
+    width: 90%;
+    top: 50%;
+  } 
+}
+
 
 
 
