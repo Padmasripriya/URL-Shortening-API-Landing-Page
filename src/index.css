@@ -66,7 +66,7 @@ p, li {
 
 /* Global Styles -- END -- */
 
-.menu-component .sub-menu {
+.menu-component .sub-menu-mobile {
   position: absolute;
   top: 50%;
   background: hsl(257, 27%, 26%);
@@ -76,22 +76,31 @@ p, li {
   text-align: center;
 }
 
-.menu-component .sub-menu .sub-menu-links {
+.menu-component .sub-menu-mobile .sub-menu-links {
   color: white;
   margin-top: 25px;
   font-weight: 700;
 }
 
-.menu-component .sub-menu .sub-menu-links {
+.menu-component .sub-menu-mobile .sub-menu-links {
   color: white;
   margin-top: 25px;
   font-weight: 700;
 }
 
-.menu-component .sub-menu .hor-line {
+.menu-component .sub-menu-mobile .hor-line {
   background: white;
   height: 1px;
   margin: 0 25px;
+}
+
+.menu-component .sub-menu-desktop li button, .menu-component .sub-menu-links-desktop {
+  color:hsl(0, 0%, 75%);
+  font-weight: 700;
+}
+
+.menu-component .sub-menu-desktop li button:hover, .menu-component .sub-menu-links-desktop:hover {
+  color: #000000;
 }
 
 .header-button a, .cta-button a {

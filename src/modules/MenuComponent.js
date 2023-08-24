@@ -11,12 +11,28 @@ export function MenuComponent() {
            <header className="menu-component pt-5">
                 <div className="container">
                     <div className="d-flex align-items-center justify-content-between position-relative">
-                        <img src={CompanyLogo} alt="company logo" />
-                        
+                        <div className="d-flex align-items-center ">
+                            <img src={CompanyLogo} alt="company logo" />
+                            {/* Desktop Navigation */}
+                            <div className="sub-menu-desktop">
+                                <nav>
+                                    <ul className="d-flex align-items-center justify-content-center mx-3">
+                                        <li><button className="sub-menu-links border-0 bg-transparent px-3 pt-3">Features</button></li>
+                                        <li><button className="sub-menu-links border-0 bg-transparent px-3 pt-3">Pricing</button></li>
+                                        <li><button className="sub-menu-links border-0 bg-transparent px-3 pt-3">Resources</button></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <ul>
+                                <li><button className="sub-menu-links-desktop border-0 bg-transparent mb-4 px-4 pt-3">Login</button></li>
+                                <li><button className="cta-button mt-2">Sign Up</button></li>
+                        </ul>
+                         
                         {/* When isOpen is true then the navbar is displayed */}
                         {isOpen && (
-                            <div className="sub-menu">
-                                <nav>
+                            <div className="sub-menu-mobile">
+                                <nav className="d-md-none">
                                     <ul>
                                         <li><button className="sub-menu-links border-0 bg-transparent">Features</button></li>
                                         <li><button className="sub-menu-links border-0 bg-transparent">Pricing</button></li>
@@ -30,7 +46,12 @@ export function MenuComponent() {
                                 </ul>
                             </div>
                         )}
-                        <button onClick= {() => setIsOpen(!isOpen)} className="text-uppercase border-0 bg-transparent">Menu</button>
+                        <button 
+                            onClick= {() => setIsOpen(!isOpen)} 
+                            className="text-uppercase border-0 bg-transparent d-md-none">
+                            {isOpen ? "Close" : "Menu"}
+                        </button>
+                        
                     </div>
                 </div>
            </header>
