@@ -166,7 +166,6 @@ p, li {
 .api-component {
   background: hsl(257, 27%, 26%);
   border-radius: 10px;
-  padding-top: 48px;
 }
 
 .api-component .input-url {
@@ -187,6 +186,10 @@ p, li {
   border-radius: 10px;
   font-size: 18px;
   border: none;
+}
+
+.api-component .input-url-button:focus {
+  background: hsl(180, 53%, 72%,1);
 }
 
 /* Desktop */
