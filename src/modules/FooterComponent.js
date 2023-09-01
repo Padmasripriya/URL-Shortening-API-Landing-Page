@@ -10,7 +10,7 @@ export function FooterComponent() {
                         <img src={FooterLogo} alt="footer logo" />
                     </div>
                     <div className="col-12 col-lg-2 company-features">
-                        <ul className="mb-4 text-start">
+                        <ul className="mb-4 text-center text-lg-start">
                             <li className="text-white"><strong>Features</strong></li>
                             <li>Link Shortening</li>
                             <li>Branded Links</li>
@@ -18,7 +18,7 @@ export function FooterComponent() {
                         </ul>
                     </div>
                     <div className="col-12 col-lg-2 company-resources">
-                        <ul className="mb-4 text-start">
+                        <ul className="mb-4 text-center text-lg-start">
                             <li className="text-white"><strong>Resources</strong></li>
                             <li>Blog</li>
                             <li>Developers</li>
@@ -26,7 +26,7 @@ export function FooterComponent() {
                         </ul>
                     </div>
                     <div className="col-12 col-lg-2 company-details">
-                        <ul className="mb-4 text-start">
+                        <ul className="mb-4 text-center text-lg-start">
                             <li className="text-white"><strong>Company</strong></li>
                             <li>About</li>
                             <li>Our Team</li>
