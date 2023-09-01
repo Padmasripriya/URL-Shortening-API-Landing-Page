@@ -1,3 +1,5 @@
+###Live URL: https://react-responsive-landing-page.netlify.app/
+
 Bootstrap installation: npm install bootstrap
 
 import these statements in index.js file
